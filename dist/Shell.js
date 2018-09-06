@@ -93,7 +93,7 @@ var Shell = exports.Shell = function (_EventEmitter) {
     _this._cfg.EOI = EOI;
 
     // arguments for PowerShell process
-    var args = ['-NoLogo', '-NoExit', '-InputFormat', 'Text', '-Command', '-'];
+      var args = ['-NonInteractive','-NoLogo', '-NoExit', '-InputFormat', 'Text', '-Command', '-'];
     if (noProfile) {
       args = ['-NoProfile'].concat(_toConsumableArray(args));
     }
