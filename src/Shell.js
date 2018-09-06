@@ -39,7 +39,7 @@ export class Shell extends EventEmitter {
     this._cfg.EOI = EOI;
 
     // arguments for PowerShell process
-    let args = ['-NoLogo', '-NoExit', '-InputFormat', 'Text', '-Command', '-'];
+    let args = ['-NonInteractive','-NoLogo', '-NoExit', '-InputFormat', 'Text', '-Command', '-'];
     if(noProfile) {
       args = ['-NoProfile', ...args];
     }
