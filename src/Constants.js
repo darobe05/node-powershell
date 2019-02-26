@@ -31,7 +31,7 @@ export const MSGS        = {
       CMD_FINISH: OK_MSG(`Command invoke finished\n`),
     },
     ERROR: {
-      CMD_FAIL: ERROR_MSG(`Command invoke failed\n`),
+      CMD_FAIL: INFO_MSG(`Command invoke failed\n`),
     }
   },
   DISPOSE: { },
